@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+org.eclipse.acceleo.debug.messages.enable=true
+org.eclipse.acceleo.query.cache.enable=true
+org.eclipse.acceleo.ui.notification.cancel=true
+org.eclipse.acceleo.ui.notification.error=true
+org.eclipse.acceleo.ui.notification.forced.deactivation=false
+org.eclipse.acceleo.ui.notification.info=true
+org.eclipse.acceleo.ui.notification.ok=true
+org.eclipse.acceleo.ui.notification.success=true
+org.eclipse.acceleo.ui.notification.warning=true

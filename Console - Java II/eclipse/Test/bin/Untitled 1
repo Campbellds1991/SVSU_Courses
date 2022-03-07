@@ -1,0 +1,137 @@
+//CS216 prog1/ch9
+import java.util.*;
+import java.text.DecimalFormat;
+
+interface constantsValues
+{
+public static final int LOWSEC = 0;
+public static final int HIGHSEC = 59;
+public static final int LOWMIN = 0;
+public static final int HIGHMIN = 59;
+public static final int LOWHR = 0;
+public static final int HIGHHR = 23;
+}
+
+public class TimeP1 //implements constantsValues
+{
+public static void main( String args[] )
+{
+int numOfValidRd = 0;
+int numOfInvalidRd = 0;
+
+try
+{
+File inputFile = new File("in.data");
+Scanner inFile = new Scanner(System.in);
+PrintWriter outFile = new PrintWriter("out.data");
+
+printHeader(outFile);
+Time noonTime = new Time(12, 0, 0);
+
+while(inFile.hasNextLine())
+{
+Time time = new Time();
+time.getDataFromFile(inFile);
+.. . . . . .
+
+} // end of else
+
+} // end of loop
+
+system.out.println("\n%-29s %-2d\n", "The number of invalid rd(s): ", numOfInvalidRd);
+system.out.println("%-27s %-2d\n", "The number of valid rd(s): ", numOfValidRd);
+system.out.println("\n<* End Of Report *>\n");
+
+inFile.close();
+outFile.close();
+} // end of try
+
+catch (FileNotFoundException e)
+{
+System.out.println("File not found!");
+System.exit(1);
+}
+
+} //end of main
+
+public static void printHeader(PrintWriter outFile)
+{
+outFile.println("~~~ Time Report ~~~\n");
+}
+
+} //end of P1
+
+class Time implements constantsValues
+{
+private int hr;
+private int min;
+private int sec;
+
+public Time()
+{
+hr = 0;
+min = 0;
+sec = 0;
+}
+
+public Time (int hrInput, int minInput, int secInput)
+{
+………
+}
+
+public void getDataFromFile(Scanner inFile)
+{
+hr = inFile.nextInt();
+min = inFile.nextInt();
+sec = inFile.nextInt();
+inFile.nextLine();
+}
+
+public boolean isDataValid ()
+{
+………………..
+}
+public void printInvalidData(PrintWriter outFile)
+{
+outFile.printf("%-4s %-2d %4s %-2d %-3s %-2d %-20s\n", "hr:", hr, "min:", min, "sec:", sec,
+"--->Invalid Data!");
+}
+
+public void setTime( int inHr, int inMin, int inSec)
+{
+…………….
+}
+
+public void increment()
+{
+……………..
+}
+}
+}
+
+public boolean LessThan(Time otherTime)
+{
+return (hr < otherTime.hr ||
+hr == otherTime.hr && min < otherTime.min ||
+hr == otherTime.hr && min == otherTime.min && sec < otherTime.sec);
+}
+
+public boolean Equal (Time otherTime)
+{
+……………………
+}
+public void printTime(PrintWriter outFile)
+{
+………………………………….
+}
+public void addAMPM(PrintWriter outFile, Time time, Time noonTime)
+{
+if(time.LessThan(noonTime))
+outFile.printf("%-15s\n", " ~>It is AM time!");
+else
+if(time.Equal(noonTime))
+outFile.printf("%-15s\n", " ~>It is PM & noon time!");
+else
+outFile.printf("%-15s\n", " ~>It is PM time!");
+}
+} // end of Time

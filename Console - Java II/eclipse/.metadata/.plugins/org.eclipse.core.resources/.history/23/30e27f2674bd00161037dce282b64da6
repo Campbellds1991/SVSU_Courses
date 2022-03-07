@@ -1,0 +1,34 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Proj_Retest {
+	public static void main(String[] Args){
+		GenericLinkedList<Integer> GLL = new GenericLinkedList<Integer>();
+		
+		File scores = new File("scores.txt");
+		Integer[] scoresData = StartRead(scores);
+		
+		
+		
+		
+		
+	}
+	public static Integer[] StartRead(File file){
+		Scanner in;
+		Integer[] out = new Integer[5];
+		try {
+			in = new Scanner(file);
+			int i = 0;
+			while(in.hasNextLine()){
+				out[i++] = in.nextInt();				
+			}
+			in.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		
+		return out;
+	}
+}
