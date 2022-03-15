@@ -1,0 +1,11 @@
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch7.2 Lab\Campbell Ch7.2 Lab\bin\Debug\Campbell Ch7.2 Lab.exe.config
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch7.2 Lab\Campbell Ch7.2 Lab\bin\Debug\Campbell Ch7.2 Lab.exe
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch7.2 Lab\Campbell Ch7.2 Lab\bin\Debug\Campbell Ch7.2 Lab.pdb
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch7.2 Lab\Campbell Ch7.2 Lab\bin\Debug\Campbell Ch7.2 Lab.xml
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch7.2 Lab\Campbell Ch7.2 Lab\obj\Debug\Campbell Ch7.2 Lab.vbprojResolveAssemblyReference.cache
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch7.2 Lab\Campbell Ch7.2 Lab\obj\Debug\Campbell_Ch7._2_Lab.Campbell_Ch72.resources
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch7.2 Lab\Campbell Ch7.2 Lab\obj\Debug\Campbell_Ch7._2_Lab.Resources.resources
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch7.2 Lab\Campbell Ch7.2 Lab\obj\Debug\Campbell Ch7.2 Lab.vbproj.GenerateResource.Cache
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch7.2 Lab\Campbell Ch7.2 Lab\obj\Debug\Campbell Ch7.2 Lab.exe
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch7.2 Lab\Campbell Ch7.2 Lab\obj\Debug\Campbell Ch7.2 Lab.xml
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch7.2 Lab\Campbell Ch7.2 Lab\obj\Debug\Campbell Ch7.2 Lab.pdb

@@ -1,0 +1,6 @@
+10,10,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\BtnDblMethod_Click.nsd"
+860,10,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\BtnStraightMethod.nsd"
+1706,951,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\DoubleCalc.nsd"
+199,466,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Header.nsd"
+1720,6,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\SingleCalc.nsd"
+45,778,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\ValidityTest.nsd"

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Program10", "Program10\Program10.vbproj", "{6C96887A-7DBD-41D9-803A-9F633D7CA5C1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Library", "Library\Library.vbproj", "{982FF1B5-9B65-476C-9422-A5106CCEEC0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C96887A-7DBD-41D9-803A-9F633D7CA5C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C96887A-7DBD-41D9-803A-9F633D7CA5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C96887A-7DBD-41D9-803A-9F633D7CA5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C96887A-7DBD-41D9-803A-9F633D7CA5C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{982FF1B5-9B65-476C-9422-A5106CCEEC0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{982FF1B5-9B65-476C-9422-A5106CCEEC0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{982FF1B5-9B65-476C-9422-A5106CCEEC0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{982FF1B5-9B65-476C-9422-A5106CCEEC0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

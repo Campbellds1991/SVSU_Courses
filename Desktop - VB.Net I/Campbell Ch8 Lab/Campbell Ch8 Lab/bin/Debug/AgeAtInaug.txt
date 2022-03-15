@@ -1,0 +1,44 @@
+George Washington,57
+John Adams,61
+Thomas Jefferson,57
+James Madison,57
+James Monroe,58
+John Q. Adams,57
+Andrew Jackson,61
+Martin Van Buren,54
+William Harrison,68
+John TyIer,51
+James Polk,49
+Zachary Taylor,64
+Millard Fillmore,50
+Franklin Pierce,48
+James Buchanan,65
+Abraham Lincoln,52
+Andrew Johnson,65
+Ulysses Grant,46
+Rutherford Hayes,54
+James Garfield,49
+Chester Arthur,50
+Grover Cleveland,47
+Benjamin Harrison,55
+Grover Cleveland,55
+William McKinley,54
+Theodore Roosevelt,42
+William Taft,51
+Woodrow Wilson,56
+Warren Harding,55
+Calvin Coolidge,51
+Herbert Hoover,54
+Franklin Roosevelt,51
+Harry Truman,60
+Dwight Eisenhower,62
+John Kennedy,43
+Lyndon Johnson,55
+Richard Nixon,56
+Gerald Ford,61
+James Carter,52
+Ronald Reagan,69
+George H. W. Bush,64
+Bill Clinton,46
+George W. Bush,54
+Barack Obama,47

@@ -1,0 +1,12 @@
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\bin\Debug\Campbell Program01.exe.config
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\bin\Debug\Campbell Program01.exe
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\bin\Debug\Campbell Program01.pdb
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\bin\Debug\Campbell Program01.xml
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\obj\Debug\Campbell Program01.vbprojResolveAssemblyReference.cache
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\obj\Debug\Campbell_Program01.FrmCampbellProject01.resources
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\obj\Debug\Campbell_Program01.Resources.resources
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\obj\Debug\Campbell Program01.vbproj.GenerateResource.Cache
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\obj\Debug\Campbell Program01.exe
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\obj\Debug\Campbell Program01.xml
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\obj\Debug\Campbell Program01.pdb
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Program01\Campbell Program01\obj\Debug\Campbell_Program01.FrmRepair.resources

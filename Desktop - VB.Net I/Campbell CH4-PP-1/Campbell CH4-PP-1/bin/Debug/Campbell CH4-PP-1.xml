@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Campbell CH4-PP-1
+</name>
+</assembly>
+<members>
+<member name="T:Campbell_CH4_PP_1.CampbellCH4">
+ <summary>
+     Name: Devin Campbell
+     Class: CS146 - 02 - MW
+     Date: 3-2-2016
+     
+     Program:
+         Input:
+             6 Checkboxes internally limited to no more then 1 concurrent selection per item
+         Process:
+             0) On Load:
+                 On Load, initialize and format List box that contains 
+                     the order menu for customers to see
+             1) Checkboxes:
+                 a) When selected, Remove selection from opposite Checkbox
+                 b) Start OrderCode() Process
+             2) OrderCode():
+                 a) Set TotalOut (Totals purchase cost) to 0 in order to restart receipt
+                 b) Per Item, check for the state of Each item, then set 
+                     a numerical code in order to process reciept later
+                 c) Start ReceiptOut() Process
+             3) ReceiptOut():
+                 a) Set format used to display the receipt
+                 b) using case statements, compare each items code in 
+                     order to determine the proper output for each line
+                 c) determine if any box is checked, if so, place the deposit above the line
+                     seperating the total
+                 d) Closing statement
+         Output:
+             Listbox including each item, as they are required, the Deposit, and total of all items checked.
+ 
+ </summary>
+</member>
+<member name="T:Campbell_CH4_PP_1.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Campbell_CH4_PP_1.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Campbell_CH4_PP_1.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>

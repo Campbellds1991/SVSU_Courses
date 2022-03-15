@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;SingleCalc()&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;StrColumnTitles &#60;- &#34;&#34;{0,-6}{1,12}{2,16}    {3,-20}&#34;&#34;&#34;,&#34;StrColumnValues &#60;- &#34;&#34;{0,-6}{1,12:C}{2,14:C}{3,19:C}&#34;&#34;&#34;,&#34;ValueStart &#60;- CDbl(TxtStartValue.Text)&#34;,&#34;Depreciation &#60;- CDbl(TxtStartValue.Text) / CDbl(TxtDuration.Text)&#34;,&#34;ValueEnd &#60;- 0.0&#34;,&#34;Year &#60;- CInt(TxtStartYear.Text)&#34;,&#34;LstOutput.Items.Add(&#34;&#34;Method: Straight-Line&#34;&#34;)&#34;,&#34;LstOutput.Items.Add(&#34;&#34;&#34;&#34;)&#34;,&#34;LstOutput.Items.Add(String.Format(StrColumnTitles, &#34;&#34;&#34;&#34;, &#34;&#34;Value at&#34;&#34;, &#34;&#34;Amount Deprec&#34;&#34;, &#34;&#34;Total Depreciation&#34;&#34;))&#34;,&#34;LstOutput.Items.Add(String.Format(StrColumnTitles, &#34;&#34;Year&#34;&#34;, &#34;&#34;Beg of Yr&#34;&#34;, &#34;&#34;During Year&#34;&#34;, &#34;&#34;to End of Year&#34;&#34;))&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<while text="&#34;Do While (CInt(ValueStart) &#62; 0)&#34;" comment="&#34;&#34;" color="ffffff">
+			<qWhile>
+				<instruction text="&#34;ValueEnd &#60;- ValueEnd + Depreciation&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;LstOutput.Items.Add(String.Format(&#34;,&#34;        StrColumnValues, Year, ValueStart, Depreciation, ValueEnd))&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;ValueStart &#60;- ValueStart - Depreciation&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+				<instruction text="&#34;Year &#60;- Year + 1&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qWhile>
+		</while>
+	</children>
+</root>

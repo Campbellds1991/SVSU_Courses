@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.23-14" text="&#34;FrmOrder&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;STOVECOST &#60;- 695&#34;,&#34;REFRIGCOST &#60;- 1195&#34;,&#34;DISHCOST &#60;- 345&#34;,&#34;TAXRATE &#60;- .06&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<call text="&#34;BtnProcess_Click(&#34;,&#34; sender As Object,&#34;,&#34; e As EventArgs) &#34;,&#34;Handles BtnProcess.Click&#34;" comment="" color="ffffff"></call>
+		<call text="&#34;Input(ByRef Private Sub input(&#34;,&#34; ByRef Name As String,&#34;,&#34; ByRef Address As String,&#34;,&#34; ByRef CSZ As String,&#34;,&#34; NoStove As String,&#34;,&#34; NoRefridge As String,&#34;,&#34; NoDishwasher As String,&#34;,&#34; ByRef Customer() As String,&#34;,&#34; ByRef OrderOut() As Integer)&#34;" comment="" color="ffffff"></call>
+		<call text="&#34;Process_Order(&#34;,&#34; ByRef Customer() As String,&#34;,&#34; ByRef OrderOut() As Integer,&#34;,&#34; ByRef InvoiceNo As String)&#34;" comment="" color="ffffff"></call>
+		<call text="&#34;Output(&#34;,&#34; InvoiceNo As String,&#34;,&#34; Customer() As String,&#34;,&#34; OrderOut() As Integer)&#34;" comment="" color="ffffff"></call>
+		<call text="&#34;Invoice_Number(&#34;,&#34; Name As String,&#34;,&#34; CSZ As String)&#34;" comment="" color="ffffff"></call>
+		<call text="&#34;NameLastFirst(&#34;,&#34; ByRef FullName)&#34;" comment="" color="ffffff"></call>
+		<call text="&#34;BtnClear_Click(&#34;,&#34; sender As Object,&#34;,&#34; e As EventArgs)&#34;,&#34;Handles BtnClear.Click&#34;" comment="" color="ffffff"></call>
+	</children>
+</root>

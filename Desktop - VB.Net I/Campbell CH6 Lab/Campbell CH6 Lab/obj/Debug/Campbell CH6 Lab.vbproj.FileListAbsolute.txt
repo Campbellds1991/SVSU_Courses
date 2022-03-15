@@ -1,0 +1,16 @@
+D:\OneDrive\SVSU\WI-16\CS-116\basic\Campbell CH6 Lab\Campbell CH6 Lab\bin\Debug\Campbell CH6 Lab.exe.config
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\bin\Debug\Campbell CH6 Lab.exe.config
+D:\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\bin\Debug\Campbell CH6 Lab.exe.config
+D:\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\obj\Debug\Campbell CH6 Lab.vbprojResolveAssemblyReference.cache
+D:\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\obj\Debug\Campbell_CH6_Lab.FrmCampbell_Ch6.resources
+D:\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\obj\Debug\Campbell_CH6_Lab.Resources.resources
+D:\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\obj\Debug\Campbell CH6 Lab.vbproj.GenerateResource.Cache
+D:\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\obj\Debug\Campbell CH6 Lab.xml
+D:\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\bin\Debug\Campbell CH6 Lab.exe
+D:\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\bin\Debug\Campbell CH6 Lab.pdb
+D:\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\bin\Debug\Campbell CH6 Lab.xml
+D:\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\obj\Debug\Campbell CH6 Lab.exe
+D:\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\obj\Debug\Campbell CH6 Lab.pdb
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\obj\Debug\Campbell CH6 Lab.exe
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\obj\Debug\Campbell CH6 Lab.xml
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell CH6 Lab\Campbell CH6 Lab\obj\Debug\Campbell CH6 Lab.pdb

@@ -1,0 +1,11 @@
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch4.2 Hw\Campbell Ch4.2 Hw\bin\Debug\Campbell Ch4.2 Hw.exe.config
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch4.2 Hw\Campbell Ch4.2 Hw\bin\Debug\Campbell Ch4.2 Hw.exe
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch4.2 Hw\Campbell Ch4.2 Hw\bin\Debug\Campbell Ch4.2 Hw.pdb
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch4.2 Hw\Campbell Ch4.2 Hw\bin\Debug\Campbell Ch4.2 Hw.xml
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch4.2 Hw\Campbell Ch4.2 Hw\obj\Debug\Campbell Ch4.2 Hw.vbprojResolveAssemblyReference.cache
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch4.2 Hw\Campbell Ch4.2 Hw\obj\Debug\Campbell_Ch4._2_Hw.CampbellCh42Hw.resources
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch4.2 Hw\Campbell Ch4.2 Hw\obj\Debug\Campbell_Ch4._2_Hw.Resources.resources
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch4.2 Hw\Campbell Ch4.2 Hw\obj\Debug\Campbell Ch4.2 Hw.vbproj.GenerateResource.Cache
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch4.2 Hw\Campbell Ch4.2 Hw\obj\Debug\Campbell Ch4.2 Hw.exe
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch4.2 Hw\Campbell Ch4.2 Hw\obj\Debug\Campbell Ch4.2 Hw.xml
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell Ch4.2 Hw\Campbell Ch4.2 Hw\obj\Debug\Campbell Ch4.2 Hw.pdb

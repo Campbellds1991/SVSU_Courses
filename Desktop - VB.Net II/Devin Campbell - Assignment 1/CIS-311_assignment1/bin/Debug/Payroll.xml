@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAnyType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <anyType xsi:type="Payroll">
+    <strName>Devin Campbell</strName>
+    <intID>604149</intID>
+    <dblHours>25</dblHours>
+    <dblWage>10.25</dblWage>
+    <isSalary>true</isSalary>
+  </anyType>
+  <anyType xsi:type="Payroll">
+    <strName>Scott James</strName>
+    <intID>1816</intID>
+    <dblHours>60</dblHours>
+    <dblWage>40</dblWage>
+    <isSalary>false</isSalary>
+  </anyType>
+  <anyType xsi:type="Payroll">
+    <strName>andrew</strName>
+    <intID>385</intID>
+    <dblHours>25</dblHours>
+    <dblWage>54</dblWage>
+    <isSalary>false</isSalary>
+  </anyType>
+</ArrayOfAnyType>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Program 04 - Jqwidgets</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="jqwidgets/styles/jqx.base.css" rel="stylesheet" type="text/css">
+
+    <!-- AngularJS CDN Link-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-app="myApp" ng-init="location='Saginaw,Mi'">
+
+    
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/1.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Pointless Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/2.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Pointless Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/3.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Pointless Caption 3</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/4.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Pointless Caption 4</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Welcome to Modern Business
+                </h1>
+            </div>
+            <div class="col-md-4" style="min-width:410px">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> JqWidgets - Analog Clock</h4>
+                    </div>
+                    <div class="panel-body">
+
+                        <body class="default">
+                            <div style="position: relative; height: 370px;">
+                                <div style="position: absolute; left: 0px; top: 0px;" id="seconds"></div>
+                                <div style="position: absolute; left: 0px; top: 0px;" id="hours"></div>
+                                <div style="position: absolute; left: 0px; top: 0px;" id="minutes"></div>
+                            </div>
+                        </body>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-8" style="min-width:900px">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i> JqWidgets - "Json" Tree Grid</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div id="treeGrid"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> AngularJS and Yahoo Weather</h4>
+                    </div>
+                    <div class="panel-body" ng-controller="ctrl1">
+                        <label>Location: <input ng-model="location" type="text"> </label><button type="button" ng-click="updateAPI()">Update</button>
+                        <br>
+                        <p data-ng-bind="yahoo.description"></p>
+                        <div ng-repeat="item in yahoo.item.forecast">
+                            <p>Date: {{item.date}} | Temperature: {{item.high+"/"+item.low}}  {{item.text}}</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Cat pictures for Prof. Corser</h2>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="img/a1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="img/a2.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-portfolio img-hover" src="img/a3.jpg" alt="">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+    </script>
+
+    <script type="text/javascript" src="jqwidgets/jqx-all.js"></script>
+    <script type="text/javascript" src="js/clockSetup.js"></script>
+    <script type="text/javascript" src="js/TreeGrid.js"></script>
+    <script type="text/javascript" src="js/program4.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+1177,1049,"D:\OneDrive\SVSU\WI-16\CS-146\Campbell-CH5-PP-3\BtnQuit_Click.nsd"
+16,14,"D:\OneDrive\SVSU\WI-16\CS-146\Campbell-CH5-PP-3\FrmOrder.nsd"
+478,14,"D:\OneDrive\SVSU\WI-16\CS-146\Campbell-CH5-PP-3\Input.nsd"
+31,1371,"D:\OneDrive\SVSU\WI-16\CS-146\Campbell-CH5-PP-3\Invoice_Number.nsd"
+970,1248,"D:\OneDrive\SVSU\WI-16\CS-146\Campbell-CH5-PP-3\NameLastFirst.nsd"
+38,1658,"D:\OneDrive\SVSU\WI-16\CS-146\Campbell-CH5-PP-3\Output.nsd"
+480,1038,"D:\OneDrive\SVSU\WI-16\CS-146\Campbell-CH5-PP-3\Process.nsd"
+539,1253,"D:\OneDrive\SVSU\WI-16\CS-146\Campbell-CH5-PP-3\BtnClear_Click.nsd"

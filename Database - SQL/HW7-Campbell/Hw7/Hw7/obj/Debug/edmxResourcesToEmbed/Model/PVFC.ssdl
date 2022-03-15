@@ -1,0 +1,756 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CIS386_HW7Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CIS386_HW7ModelStoreContainer">
+    <EntitySet Name="Customer" EntityType="CIS386_HW7Model.Store.Customer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CustomerShipAddress" EntityType="CIS386_HW7Model.Store.CustomerShipAddress" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DoesBusinessIn" EntityType="CIS386_HW7Model.Store.DoesBusinessIn" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee" EntityType="CIS386_HW7Model.Store.Employee" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmployeeSkills" EntityType="CIS386_HW7Model.Store.EmployeeSkills" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Material" EntityType="CIS386_HW7Model.Store.Material" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Order" EntityType="CIS386_HW7Model.Store.Order" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderLine" EntityType="CIS386_HW7Model.Store.OrderLine" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Payment" EntityType="CIS386_HW7Model.Store.Payment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PaymentTypes" EntityType="CIS386_HW7Model.Store.PaymentTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Producedin" EntityType="CIS386_HW7Model.Store.Producedin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Product" EntityType="CIS386_HW7Model.Store.Product" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ProductLine" EntityType="CIS386_HW7Model.Store.ProductLine" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RawMaterial" EntityType="CIS386_HW7Model.Store.RawMaterial" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Reports" EntityType="CIS386_HW7Model.Store.Reports" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Salesperson" EntityType="CIS386_HW7Model.Store.Salesperson" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Shipped" EntityType="CIS386_HW7Model.Store.Shipped" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Skill" EntityType="CIS386_HW7Model.Store.Skill" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Supplies" EntityType="CIS386_HW7Model.Store.Supplies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Territory" EntityType="CIS386_HW7Model.Store.Territory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Uses" EntityType="CIS386_HW7Model.Store.Uses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vendor" EntityType="CIS386_HW7Model.Store.Vendor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WorkCenter" EntityType="CIS386_HW7Model.Store.WorkCenter" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WorksIn" EntityType="CIS386_HW7Model.Store.WorksIn" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="CustomerShipAddressCustomer" Association="CIS386_HW7Model.Store.CustomerShipAddressCustomer">
+      <End Role="CustomerShipAddress" EntitySet="CustomerShipAddress" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="OrderCustomer" Association="CIS386_HW7Model.Store.OrderCustomer">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="DoesBusinessInCustomer" Association="CIS386_HW7Model.Store.DoesBusinessInCustomer">
+      <End Role="DoesBusinessIn" EntitySet="DoesBusinessIn" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="DoesBusinessInTerritory" Association="CIS386_HW7Model.Store.DoesBusinessInTerritory">
+      <End Role="DoesBusinessIn" EntitySet="DoesBusinessIn" />
+      <End Role="Territory" EntitySet="Territory" />
+    </AssociationSet>
+    <AssociationSet Name="OrderCustomer1" Association="CIS386_HW7Model.Store.OrderCustomer1">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="EmployeeSkillsEmployee" Association="CIS386_HW7Model.Store.EmployeeSkillsEmployee">
+      <End Role="EmployeeSkills" EntitySet="EmployeeSkills" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="WorksInEmployee" Association="CIS386_HW7Model.Store.WorksInEmployee">
+      <End Role="WorksIn" EntitySet="WorksIn" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="CustomerShipAddressTerritory" Association="CIS386_HW7Model.Store.CustomerShipAddressTerritory">
+      <End Role="CustomerShipAddress" EntitySet="CustomerShipAddress" />
+      <End Role="Territory" EntitySet="Territory" />
+    </AssociationSet>
+    <AssociationSet Name="OrderSalesperson" Association="CIS386_HW7Model.Store.OrderSalesperson">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Salesperson" EntitySet="Salesperson" />
+    </AssociationSet>
+    <AssociationSet Name="WorksInWorkCenter" Association="CIS386_HW7Model.Store.WorksInWorkCenter">
+      <End Role="WorksIn" EntitySet="WorksIn" />
+      <End Role="WorkCenter" EntitySet="WorkCenter" />
+    </AssociationSet>
+    <AssociationSet Name="EmployeeSkillsSkill" Association="CIS386_HW7Model.Store.EmployeeSkillsSkill">
+      <End Role="EmployeeSkills" EntitySet="EmployeeSkills" />
+      <End Role="Skill" EntitySet="Skill" />
+    </AssociationSet>
+    <AssociationSet Name="OrderLineOrder" Association="CIS386_HW7Model.Store.OrderLineOrder">
+      <End Role="OrderLine" EntitySet="OrderLine" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="OrderLineProduct" Association="CIS386_HW7Model.Store.OrderLineProduct">
+      <End Role="OrderLine" EntitySet="OrderLine" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="PaymentOrder" Association="CIS386_HW7Model.Store.PaymentOrder">
+      <End Role="Payment" EntitySet="Payment" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="OrderCustomerShipAddress" Association="CIS386_HW7Model.Store.OrderCustomerShipAddress">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="CustomerShipAddress" EntitySet="CustomerShipAddress" />
+    </AssociationSet>
+    <AssociationSet Name="ProducedinProduct" Association="CIS386_HW7Model.Store.ProducedinProduct">
+      <End Role="Producedin" EntitySet="Producedin" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="ProducedinWorkCenter" Association="CIS386_HW7Model.Store.ProducedinWorkCenter">
+      <End Role="Producedin" EntitySet="Producedin" />
+      <End Role="WorkCenter" EntitySet="WorkCenter" />
+    </AssociationSet>
+    <AssociationSet Name="ShippedOrderLine" Association="CIS386_HW7Model.Store.ShippedOrderLine">
+      <End Role="Shipped" EntitySet="Shipped" />
+      <End Role="OrderLine" EntitySet="OrderLine" />
+    </AssociationSet>
+    <AssociationSet Name="ProductProductLine" Association="CIS386_HW7Model.Store.ProductProductLine">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="ProductLine" EntitySet="ProductLine" />
+    </AssociationSet>
+    <AssociationSet Name="SuppliesVendor" Association="CIS386_HW7Model.Store.SuppliesVendor">
+      <End Role="Supplies" EntitySet="Supplies" />
+      <End Role="Vendor" EntitySet="Vendor" />
+    </AssociationSet>
+    <AssociationSet Name="SuppliesMaterial" Association="CIS386_HW7Model.Store.SuppliesMaterial">
+      <End Role="Supplies" EntitySet="Supplies" />
+      <End Role="Material" EntitySet="Material" />
+    </AssociationSet>
+    <AssociationSet Name="UsesProduct" Association="CIS386_HW7Model.Store.UsesProduct">
+      <End Role="Uses" EntitySet="Uses" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="UsesMaterial" Association="CIS386_HW7Model.Store.UsesMaterial">
+      <End Role="Uses" EntitySet="Uses" />
+      <End Role="Material" EntitySet="Material" />
+    </AssociationSet>
+    <AssociationSet Name="RawMaterialMaterial" Association="CIS386_HW7Model.Store.RawMaterialMaterial">
+      <End Role="RawMaterial" EntitySet="RawMaterial" />
+      <End Role="Material" EntitySet="Material" />
+    </AssociationSet>
+    <AssociationSet Name="SalespersonTerritory" Association="CIS386_HW7Model.Store.SalespersonTerritory">
+      <End Role="Salesperson" EntitySet="Salesperson" />
+      <End Role="Territory" EntitySet="Territory" />
+    </AssociationSet>
+    <AssociationSet Name="PaymentPaymentTypes" Association="CIS386_HW7Model.Store.PaymentPaymentTypes">
+      <End Role="Payment" EntitySet="Payment" />
+      <End Role="PaymentTypes" EntitySet="PaymentTypes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="CustomerName" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="CustomerAddress" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="CustomerCity" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="CustomerState" Type="nvarchar" Nullable="true" MaxLength="2" />
+    <Property Name="CustomerPostalCode" Type="nvarchar" Nullable="true" MaxLength="10" />
+    <Property Name="CustomerShipAddress_ShipAddressID" Type="int" Nullable="false" />
+    <Property Name="Order_OrderID" Type="int" Nullable="false" />
+    <Property Name="DoesBusinessIn_CustomerID" Type="int" Nullable="false" />
+    <Property Name="DoesBusinessIn_TerritoryID" Type="int" Nullable="false" />
+    <Property Name="Order1_OrderID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerShipAddress">
+    <Key>
+      <PropertyRef Name="ShipAddressID" />
+    </Key>
+    <Property Name="ShipAddressID" Type="int" Nullable="false" />
+    <Property Name="CustomerID" Type="int" Nullable="true" />
+    <Property Name="TerritoryID" Type="int" Nullable="true" />
+    <Property Name="ShipAddress" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="ShipCity" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="ShipState" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="ShipZip" Type="nvarchar" Nullable="true" MaxLength="10" />
+    <Property Name="ShipDirections" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="Order_OrderID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DoesBusinessIn">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="TerritoryID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="TerritoryID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="EmployeeName" Type="nvarchar" Nullable="true" MaxLength="25" />
+    <Property Name="EmployeeAddress" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="EmployeeCity" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="EmployeeState" Type="nvarchar" Nullable="true" MaxLength="2" />
+    <Property Name="EmployeeZip" Type="nvarchar" Nullable="true" MaxLength="9" />
+    <Property Name="EmployeeDateHired" Type="datetime" Nullable="true" />
+    <Property Name="EmployeeBirthDate" Type="datetime" Nullable="true" />
+    <Property Name="EmployeeSupervisor" Type="nvarchar" Nullable="true" MaxLength="10" />
+    <Property Name="EmployeeSkills_EmployeeID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="EmployeeSkills_SkillID" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="WorksIn_EmployeeID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WorksIn_WorkCenterID" Type="nvarchar" MaxLength="12" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmployeeSkills">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="SkillID" />
+    </Key>
+    <Property Name="EmployeeID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="SkillID" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="QualifyDate" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="MaterialID" />
+    </Key>
+    <Property Name="MaterialID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="MaterialName" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="Thickness" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Width" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="SIZE" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="Material1" Type="nvarchar" Nullable="true" MaxLength="15" />
+    <Property Name="MaterialStandardPrice" Type="float" Nullable="true" />
+    <Property Name="UnitOfMeasure" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Type" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="Supplies_VendorID" Type="int" Nullable="false" />
+    <Property Name="Supplies_MaterialID" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Uses_ProductID" Type="int" Nullable="false" />
+    <Property Name="Uses_MaterialID" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="RawMaterial_MaterialID" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" Nullable="true" />
+    <Property Name="CustomerID" Type="int" Nullable="true" />
+    <Property Name="FulfillmentDate" Type="datetime" Nullable="true" />
+    <Property Name="SalesPersonID" Type="int" Nullable="true" />
+    <Property Name="ShipAdrsID" Type="int" Nullable="true" />
+    <Property Name="OrderLine_OrderLineID" Type="int" Nullable="false" />
+    <Property Name="Payment_PaymentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderLine">
+    <Key>
+      <PropertyRef Name="OrderLineID" />
+    </Key>
+    <Property Name="OrderLineID" Type="int" Nullable="false" />
+    <Property Name="OrderID" Type="int" Nullable="true" />
+    <Property Name="ProductID" Type="int" Nullable="true" />
+    <Property Name="OrderedQuantity" Type="int" Nullable="true" />
+    <Property Name="Shipped_OrderLineID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="int" Nullable="false" />
+    <Property Name="OrderID" Type="int" Nullable="true" />
+    <Property Name="PaymentDate" Type="datetime" Nullable="true" />
+    <Property Name="PaymentTypeID" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="PaymentAmount" Type="decimal" Nullable="true" Precision="19" Scale="4" />
+    <Property Name="Comment" Type="nvarchar" Nullable="true" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="PaymentTypes">
+    <Key>
+      <PropertyRef Name="PaymentTypeID" />
+    </Key>
+    <Property Name="PaymentTypeID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TypeDescription" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Payment_PaymentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Producedin">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="WorkCenterID" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="WorkCenterID" Type="nvarchar" Nullable="false" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="ProductDescription" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="ProductFinish" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="ProductStandardPrice" Type="decimal" Nullable="true" Precision="19" Scale="4" />
+    <Property Name="ProductOnHand" Type="smallint" Nullable="true" />
+    <Property Name="ProductLineID" Type="int" Nullable="true" />
+    <Property Name="Photo" Type="varbinary(max)" Nullable="true" />
+    <Property Name="OrderLine_OrderLineID" Type="int" Nullable="false" />
+    <Property Name="Producedin_ProductID" Type="int" Nullable="false" />
+    <Property Name="Producedin_WorkCenterID" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="Uses_ProductID" Type="int" Nullable="false" />
+    <Property Name="Uses_MaterialID" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductLine">
+    <Key>
+      <PropertyRef Name="ProductLineID" />
+    </Key>
+    <Property Name="ProductLineID" Type="int" Nullable="false" />
+    <Property Name="ProductLineName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Product_ProductID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RawMaterial">
+    <Key>
+      <PropertyRef Name="MaterialID" />
+    </Key>
+    <Property Name="MaterialID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="MaterialName" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="Thickness" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Width" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Size" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="Material" Type="nvarchar" Nullable="true" MaxLength="15" />
+    <Property Name="MaterialStandardPrice" Type="float" Nullable="true" />
+    <Property Name="UnitOfMeasure" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="MaterialType" Type="nvarchar" Nullable="true" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Reports">
+    <Key>
+      <PropertyRef Name="Report_ID" />
+    </Key>
+    <Property Name="Report_ID" Type="int" Nullable="false" />
+    <Property Name="Report_name" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Report_macro" Type="nvarchar" Nullable="true" MaxLength="35" />
+    <Property Name="Report_description" Type="nvarchar" Nullable="true" MaxLength="255" />
+    <Property Name="ByBeginDate" Type="bit" Nullable="false" />
+    <Property Name="ByEndDate" Type="bit" Nullable="false" />
+    <Property Name="ByCustomer" Type="bit" Nullable="false" />
+    <Property Name="BySalesperson" Type="bit" Nullable="false" />
+    <Property Name="ByTerritory" Type="bit" Nullable="false" />
+    <Property Name="ByEmployee" Type="bit" Nullable="false" />
+    <Property Name="ByProduct" Type="bit" Nullable="false" />
+    <Property Name="ByProductLine" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Salesperson">
+    <Key>
+      <PropertyRef Name="SalespersonID" />
+    </Key>
+    <Property Name="SalespersonID" Type="int" Nullable="false" />
+    <Property Name="SalespersonName" Type="nvarchar" Nullable="true" MaxLength="25" />
+    <Property Name="SalespersonTelephone" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="SalespersonFax" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="SalesTerritoryID" Type="int" Nullable="false" />
+    <Property Name="SalespersonAddress" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="SalespersonCity" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="SalespersonState" Type="nvarchar" Nullable="true" MaxLength="2" />
+    <Property Name="SalespersonZip" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Order_OrderID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Shipped">
+    <Key>
+      <PropertyRef Name="OrderLineID" />
+    </Key>
+    <Property Name="OrderLineID" Type="int" Nullable="false" />
+    <Property Name="ShippedQuantity" Type="smallint" Nullable="true" />
+    <Property Name="ShippedDate" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Skill">
+    <Key>
+      <PropertyRef Name="SkillID" />
+    </Key>
+    <Property Name="SkillID" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="SkillDescription" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="EmployeeSkills_EmployeeID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="EmployeeSkills_SkillID" Type="nvarchar" MaxLength="12" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Supplies">
+    <Key>
+      <PropertyRef Name="VendorID" />
+      <PropertyRef Name="MaterialID" />
+    </Key>
+    <Property Name="VendorID" Type="int" Nullable="false" />
+    <Property Name="MaterialID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="SupplyUnitPrice" Type="decimal" Nullable="true" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Territory">
+    <Key>
+      <PropertyRef Name="TerritoryID" />
+    </Key>
+    <Property Name="TerritoryID" Type="int" Nullable="false" />
+    <Property Name="TerritoryName" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="DoesBusinessIn_CustomerID" Type="int" Nullable="false" />
+    <Property Name="DoesBusinessIn_TerritoryID" Type="int" Nullable="false" />
+    <Property Name="CustomerShipAddress_ShipAddressID" Type="int" Nullable="false" />
+    <Property Name="Salesperson_SalespersonID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Uses">
+    <Key>
+      <PropertyRef Name="ProductID" />
+      <PropertyRef Name="MaterialID" />
+    </Key>
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="MaterialID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="QuantityRequired" Type="smallint" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Vendor">
+    <Key>
+      <PropertyRef Name="VendorID" />
+    </Key>
+    <Property Name="VendorID" Type="int" Nullable="false" />
+    <Property Name="VendorName" Type="nvarchar" Nullable="true" MaxLength="25" />
+    <Property Name="VendorAddress" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="VendorCity" Type="nvarchar" Nullable="true" MaxLength="20" />
+    <Property Name="VendorState" Type="nvarchar" Nullable="true" MaxLength="2" />
+    <Property Name="VendorZipcode" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="VendorPhone" Type="nvarchar" Nullable="true" MaxLength="10" />
+    <Property Name="VendorFaxNumber" Type="nvarchar" Nullable="true" MaxLength="10" />
+    <Property Name="VendorContact" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="VendorTaxIDNumber" Type="nvarchar" Nullable="true" MaxLength="50" />
+    <Property Name="Supplies_VendorID" Type="int" Nullable="false" />
+    <Property Name="Supplies_MaterialID" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorkCenter">
+    <Key>
+      <PropertyRef Name="WorkCenterID" />
+    </Key>
+    <Property Name="WorkCenterID" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="WorkCenterLocation" Type="nvarchar" Nullable="true" MaxLength="30" />
+    <Property Name="WorksIn_EmployeeID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="WorksIn_WorkCenterID" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="Producedin_ProductID" Type="int" Nullable="false" />
+    <Property Name="Producedin_WorkCenterID" Type="nvarchar" MaxLength="12" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorksIn">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="WorkCenterID" />
+    </Key>
+    <Property Name="EmployeeID" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="WorkCenterID" Type="nvarchar" Nullable="false" MaxLength="12" />
+  </EntityType>
+  <Association Name="CustomerShipAddressCustomer">
+    <End Role="CustomerShipAddress" Type="CIS386_HW7Model.Store.CustomerShipAddress" Multiplicity="1" />
+    <End Role="Customer" Type="CIS386_HW7Model.Store.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerShipAddress">
+        <PropertyRef Name="ShipAddressID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="CustomerShipAddress_ShipAddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderCustomer">
+    <End Role="Order" Type="CIS386_HW7Model.Store.Order" Multiplicity="1" />
+    <End Role="Customer" Type="CIS386_HW7Model.Store.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="Order_OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DoesBusinessInCustomer">
+    <End Role="DoesBusinessIn" Type="CIS386_HW7Model.Store.DoesBusinessIn" Multiplicity="1" />
+    <End Role="Customer" Type="CIS386_HW7Model.Store.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DoesBusinessIn">
+        <PropertyRef Name="CustomerID" />
+        <PropertyRef Name="TerritoryID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="DoesBusinessIn_CustomerID" />
+        <PropertyRef Name="DoesBusinessIn_TerritoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DoesBusinessInTerritory">
+    <End Role="DoesBusinessIn" Type="CIS386_HW7Model.Store.DoesBusinessIn" Multiplicity="1" />
+    <End Role="Territory" Type="CIS386_HW7Model.Store.Territory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DoesBusinessIn">
+        <PropertyRef Name="CustomerID" />
+        <PropertyRef Name="TerritoryID" />
+      </Principal>
+      <Dependent Role="Territory">
+        <PropertyRef Name="DoesBusinessIn_CustomerID" />
+        <PropertyRef Name="DoesBusinessIn_TerritoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderCustomer1">
+    <End Role="Order" Type="CIS386_HW7Model.Store.Order" Multiplicity="1" />
+    <End Role="Customer" Type="CIS386_HW7Model.Store.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="Order1_OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmployeeSkillsEmployee">
+    <End Role="EmployeeSkills" Type="CIS386_HW7Model.Store.EmployeeSkills" Multiplicity="1" />
+    <End Role="Employee" Type="CIS386_HW7Model.Store.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeSkills">
+        <PropertyRef Name="EmployeeID" />
+        <PropertyRef Name="SkillID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="EmployeeSkills_EmployeeID" />
+        <PropertyRef Name="EmployeeSkills_SkillID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="WorksInEmployee">
+    <End Role="WorksIn" Type="CIS386_HW7Model.Store.WorksIn" Multiplicity="1" />
+    <End Role="Employee" Type="CIS386_HW7Model.Store.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WorksIn">
+        <PropertyRef Name="EmployeeID" />
+        <PropertyRef Name="WorkCenterID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="WorksIn_EmployeeID" />
+        <PropertyRef Name="WorksIn_WorkCenterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CustomerShipAddressTerritory">
+    <End Role="CustomerShipAddress" Type="CIS386_HW7Model.Store.CustomerShipAddress" Multiplicity="1" />
+    <End Role="Territory" Type="CIS386_HW7Model.Store.Territory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerShipAddress">
+        <PropertyRef Name="ShipAddressID" />
+      </Principal>
+      <Dependent Role="Territory">
+        <PropertyRef Name="CustomerShipAddress_ShipAddressID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderSalesperson">
+    <End Role="Order" Type="CIS386_HW7Model.Store.Order" Multiplicity="1" />
+    <End Role="Salesperson" Type="CIS386_HW7Model.Store.Salesperson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="Salesperson">
+        <PropertyRef Name="Order_OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="WorksInWorkCenter">
+    <End Role="WorksIn" Type="CIS386_HW7Model.Store.WorksIn" Multiplicity="1" />
+    <End Role="WorkCenter" Type="CIS386_HW7Model.Store.WorkCenter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WorksIn">
+        <PropertyRef Name="EmployeeID" />
+        <PropertyRef Name="WorkCenterID" />
+      </Principal>
+      <Dependent Role="WorkCenter">
+        <PropertyRef Name="WorksIn_EmployeeID" />
+        <PropertyRef Name="WorksIn_WorkCenterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmployeeSkillsSkill">
+    <End Role="EmployeeSkills" Type="CIS386_HW7Model.Store.EmployeeSkills" Multiplicity="1" />
+    <End Role="Skill" Type="CIS386_HW7Model.Store.Skill" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeSkills">
+        <PropertyRef Name="EmployeeID" />
+        <PropertyRef Name="SkillID" />
+      </Principal>
+      <Dependent Role="Skill">
+        <PropertyRef Name="EmployeeSkills_EmployeeID" />
+        <PropertyRef Name="EmployeeSkills_SkillID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderLineOrder">
+    <End Role="OrderLine" Type="CIS386_HW7Model.Store.OrderLine" Multiplicity="1" />
+    <End Role="Order" Type="CIS386_HW7Model.Store.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderLine">
+        <PropertyRef Name="OrderLineID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="OrderLine_OrderLineID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderLineProduct">
+    <End Role="OrderLine" Type="CIS386_HW7Model.Store.OrderLine" Multiplicity="1" />
+    <End Role="Product" Type="CIS386_HW7Model.Store.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderLine">
+        <PropertyRef Name="OrderLineID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="OrderLine_OrderLineID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PaymentOrder">
+    <End Role="Payment" Type="CIS386_HW7Model.Store.Payment" Multiplicity="1" />
+    <End Role="Order" Type="CIS386_HW7Model.Store.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment">
+        <PropertyRef Name="PaymentID" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="Payment_PaymentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderCustomerShipAddress">
+    <End Role="Order" Type="CIS386_HW7Model.Store.Order" Multiplicity="1" />
+    <End Role="CustomerShipAddress" Type="CIS386_HW7Model.Store.CustomerShipAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderID" />
+      </Principal>
+      <Dependent Role="CustomerShipAddress">
+        <PropertyRef Name="Order_OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProducedinProduct">
+    <End Role="Producedin" Type="CIS386_HW7Model.Store.Producedin" Multiplicity="1" />
+    <End Role="Product" Type="CIS386_HW7Model.Store.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producedin">
+        <PropertyRef Name="ProductID" />
+        <PropertyRef Name="WorkCenterID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="Producedin_ProductID" />
+        <PropertyRef Name="Producedin_WorkCenterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProducedinWorkCenter">
+    <End Role="Producedin" Type="CIS386_HW7Model.Store.Producedin" Multiplicity="1" />
+    <End Role="WorkCenter" Type="CIS386_HW7Model.Store.WorkCenter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producedin">
+        <PropertyRef Name="ProductID" />
+        <PropertyRef Name="WorkCenterID" />
+      </Principal>
+      <Dependent Role="WorkCenter">
+        <PropertyRef Name="Producedin_ProductID" />
+        <PropertyRef Name="Producedin_WorkCenterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ShippedOrderLine">
+    <End Role="Shipped" Type="CIS386_HW7Model.Store.Shipped" Multiplicity="1" />
+    <End Role="OrderLine" Type="CIS386_HW7Model.Store.OrderLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shipped">
+        <PropertyRef Name="OrderLineID" />
+      </Principal>
+      <Dependent Role="OrderLine">
+        <PropertyRef Name="Shipped_OrderLineID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductProductLine">
+    <End Role="Product" Type="CIS386_HW7Model.Store.Product" Multiplicity="1" />
+    <End Role="ProductLine" Type="CIS386_HW7Model.Store.ProductLine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductLine">
+        <PropertyRef Name="Product_ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SuppliesVendor">
+    <End Role="Supplies" Type="CIS386_HW7Model.Store.Supplies" Multiplicity="1" />
+    <End Role="Vendor" Type="CIS386_HW7Model.Store.Vendor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplies">
+        <PropertyRef Name="VendorID" />
+        <PropertyRef Name="MaterialID" />
+      </Principal>
+      <Dependent Role="Vendor">
+        <PropertyRef Name="Supplies_VendorID" />
+        <PropertyRef Name="Supplies_MaterialID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SuppliesMaterial">
+    <End Role="Supplies" Type="CIS386_HW7Model.Store.Supplies" Multiplicity="1" />
+    <End Role="Material" Type="CIS386_HW7Model.Store.Material" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplies">
+        <PropertyRef Name="VendorID" />
+        <PropertyRef Name="MaterialID" />
+      </Principal>
+      <Dependent Role="Material">
+        <PropertyRef Name="Supplies_VendorID" />
+        <PropertyRef Name="Supplies_MaterialID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsesProduct">
+    <End Role="Uses" Type="CIS386_HW7Model.Store.Uses" Multiplicity="1" />
+    <End Role="Product" Type="CIS386_HW7Model.Store.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uses">
+        <PropertyRef Name="ProductID" />
+        <PropertyRef Name="MaterialID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="Uses_ProductID" />
+        <PropertyRef Name="Uses_MaterialID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsesMaterial">
+    <End Role="Uses" Type="CIS386_HW7Model.Store.Uses" Multiplicity="1" />
+    <End Role="Material" Type="CIS386_HW7Model.Store.Material" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Uses">
+        <PropertyRef Name="ProductID" />
+        <PropertyRef Name="MaterialID" />
+      </Principal>
+      <Dependent Role="Material">
+        <PropertyRef Name="Uses_ProductID" />
+        <PropertyRef Name="Uses_MaterialID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RawMaterialMaterial">
+    <End Role="RawMaterial" Type="CIS386_HW7Model.Store.RawMaterial" Multiplicity="1" />
+    <End Role="Material" Type="CIS386_HW7Model.Store.Material" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RawMaterial">
+        <PropertyRef Name="MaterialID" />
+      </Principal>
+      <Dependent Role="Material">
+        <PropertyRef Name="RawMaterial_MaterialID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SalespersonTerritory">
+    <End Role="Salesperson" Type="CIS386_HW7Model.Store.Salesperson" Multiplicity="1" />
+    <End Role="Territory" Type="CIS386_HW7Model.Store.Territory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salesperson">
+        <PropertyRef Name="SalespersonID" />
+      </Principal>
+      <Dependent Role="Territory">
+        <PropertyRef Name="Salesperson_SalespersonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PaymentPaymentTypes">
+    <End Role="Payment" Type="CIS386_HW7Model.Store.Payment" Multiplicity="1" />
+    <End Role="PaymentTypes" Type="CIS386_HW7Model.Store.PaymentTypes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment">
+        <PropertyRef Name="PaymentID" />
+      </Principal>
+      <Dependent Role="PaymentTypes">
+        <PropertyRef Name="Payment_PaymentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

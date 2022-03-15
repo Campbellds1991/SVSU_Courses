@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.24-04" text="&#34;FrmPhone_Load&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Dim Directory() As String = IO.File.ReadAllLines(&#34;&#34;Directory.txt&#34;&#34;)&#34;,&#34;ReDim Employees(Directory.Length - 1)&#34;,&#34;Dim data(2) As String&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<for text="&#34;For i &#60;- 0 to Directory.length - 1&#34;" comment="&#34;&#34;" counterVar="For i" startValue="0 to Directory.length - 1" stepConst="1" style="FREETEXT" color="ffffff">
+			<qFor>
+				<instruction text="&#34;Dim Line &#60;- Directory(i)&#34;,&#34;data = Line.Split(&#34;&#34;,&#34;&#34;c)&#34;,&#34;Employees(i).PushCode = GetPushCode(data(0), data(1))&#34;,&#34;Employees(i).FirstName = data(0)&#34;,&#34;Employees(i).LastName = data(1)&#34;,&#34;Employees(i).Extention = data(2)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qFor>
+		</for>
+	</children>
+</root>

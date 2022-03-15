@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.23-14" text="&#34;NameLastFirst()&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;i &#60;- FullName.IndexOf(&#34;&#34; &#34;&#34;)&#34;,&#34;temp &#60;- FullName.Substring(0, i)&#34;,&#34;FullName &#60;- FullName.Substring(i + 1)&#34;,&#34;FullName &#60;- FullName &amp; &#34;&#34;, &#34;&#34; &amp; temp&#34;,&#34;Return FullName&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;ValidityTest()&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;test &#60;- false&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<alternative text="&#34;If (Not IsNumeric(TxtStartValue.Text))&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;TxtStartValue.Text &#60;- InputBox(&#34;&#34;Cost is invalid, Please enter a numerical cost w/ no Symbols&#34;&#34;)&#34;,&#34;test &#60;- True&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;If (Not IsNumeric(TxtStartYear.Text)) &#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;TxtStartYear.Text &#60;- InputBox(&#34;&#34;Starting Year is invalid, Please enter a numerical Year w/ no Symbols&#34;&#34;)&#34;,&#34;test &#60;- True&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;If (Not IsNumeric(TxtDuration.Text))&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;TxtDuration.Text &#60;- InputBox(&#34;&#34;Estimated Life is invalid, Please enter a numerical cost w/ no Symbols&#34;&#34;)&#34;,&#34;test &#60;- True&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;Return test&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>

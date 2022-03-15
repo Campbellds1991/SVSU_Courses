@@ -1,0 +1,10 @@
+D:\OneDrive\SVSU\Courses\CIS-311\Assignment1\CIS-311_assignment1\bin\Release\CIS-311_assignment1.exe.config
+D:\OneDrive\SVSU\Courses\CIS-311\Assignment1\CIS-311_assignment1\bin\Release\CIS-311_assignment1.exe
+D:\OneDrive\SVSU\Courses\CIS-311\Assignment1\CIS-311_assignment1\bin\Release\CIS-311_assignment1.pdb
+D:\OneDrive\SVSU\Courses\CIS-311\Assignment1\CIS-311_assignment1\bin\Release\CIS-311_assignment1.xml
+D:\OneDrive\SVSU\Courses\CIS-311\Assignment1\CIS-311_assignment1\obj\Release\CIS_311_assignment1.frmPayroll.resources
+D:\OneDrive\SVSU\Courses\CIS-311\Assignment1\CIS-311_assignment1\obj\Release\CIS_311_assignment1.Resources.resources
+D:\OneDrive\SVSU\Courses\CIS-311\Assignment1\CIS-311_assignment1\obj\Release\CIS-311_assignment1.vbproj.GenerateResource.Cache
+D:\OneDrive\SVSU\Courses\CIS-311\Assignment1\CIS-311_assignment1\obj\Release\CIS-311_assignment1.exe
+D:\OneDrive\SVSU\Courses\CIS-311\Assignment1\CIS-311_assignment1\obj\Release\CIS-311_assignment1.xml
+D:\OneDrive\SVSU\Courses\CIS-311\Assignment1\CIS-311_assignment1\obj\Release\CIS-311_assignment1.pdb

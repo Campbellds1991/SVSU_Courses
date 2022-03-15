@@ -1,0 +1,7 @@
+1657,644,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell CH7-PP-10\BtnDisplayDirectory_Click.nsd"
+15,481,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell CH7-PP-10\Employee.nsd"
+1025,482,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell CH7-PP-10\FrmPhone_Load.nsd"
+8,5,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell CH7-PP-10\GetPushCode.nsd"
+376,482,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell CH7-PP-10\Locate.nsd"
+1657,784,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell CH7-PP-10\BtnExit_Click.nsd"
+1652,478,"C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell CH7-PP-10\BtnLookup_Click.nsd"

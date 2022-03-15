@@ -1,0 +1,11 @@
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Campbell-CH6-PP-4B\bin\Debug\Campbell-CH6-PP-4B.exe.config
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Campbell-CH6-PP-4B\bin\Debug\Campbell-CH6-PP-4B.exe
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Campbell-CH6-PP-4B\bin\Debug\Campbell-CH6-PP-4B.pdb
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Campbell-CH6-PP-4B\bin\Debug\Campbell-CH6-PP-4B.xml
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Campbell-CH6-PP-4B\obj\Debug\Campbell-CH6-PP-4B.vbprojResolveAssemblyReference.cache
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Campbell-CH6-PP-4B\obj\Debug\Campbell_CH6_PP_4B.FrmDepreciation.resources
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Campbell-CH6-PP-4B\obj\Debug\Campbell_CH6_PP_4B.Resources.resources
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Campbell-CH6-PP-4B\obj\Debug\Campbell-CH6-PP-4B.vbproj.GenerateResource.Cache
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Campbell-CH6-PP-4B\obj\Debug\Campbell-CH6-PP-4B.exe
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Campbell-CH6-PP-4B\obj\Debug\Campbell-CH6-PP-4B.xml
+C:\Users\campb\OneDrive\SVSU\WI-16\CS-146\Campbell-CH6-PP-4B\Campbell-CH6-PP-4B\obj\Debug\Campbell-CH6-PP-4B.pdb

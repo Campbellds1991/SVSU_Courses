@@ -1,0 +1,31 @@
+ Dim DBCat As New ADOX.Catalog()
+
+        Try
+            DBCat.Create(strConn)
+            Debug.WriteLine("Created DataBase")
+        Catch ex As Exception
+            Debug.WriteLine("DataBase Already Existed")
+        End Try
+
+        DBConn = New OleDbConnection(strConn)
+        DBConn.Open()
+
+        DBCommand = New OleDbCommand("CREATE TABLE Customers (CustomerID INTEGER IDENTITY(1,1) PRIMARY KEY,FirstName VARCHAR,LastName VARCHAR,StreetAddress VARCHAR,City VARCHAR,State VARCHAR(2),ZipCode NUMERIC(5));")
+        DBCommand.Connection = DBConn
+        Try
+            DBCommand.ExecuteNonQuery()
+            Debug.WriteLine("Created Customers Table")
+        Catch ex As Exception
+            Debug.WriteLine("Customers Table Already Exists")
+        End Try
+
+        DBCommand = New OleDbCommand("CREATE TABLE Orders (OrderNum INTEGER IDENTITY(1,1) PRIMARY KEY,CustID INTEGER FOREIGN KEY REFERENCES Customers(CustomerID),ItemNumber VARCHAR,ItemName VARCHAR,Quantity NUMERIC,ItemPrice NUMERIC);")
+        DBCommand.Connection = DBConn
+        Try
+            DBCommand.ExecuteNonQuery()
+            Debug.WriteLine("Created Orders Table")
+        Catch ex As Exception
+            Debug.WriteLine("Orders Table Already Exists")
+        End Try
+
+        DBConn.Close()

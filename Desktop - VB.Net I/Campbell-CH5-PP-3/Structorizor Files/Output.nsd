@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" version="3.23-14" text="&#34;Output()&#34;" comment="&#34;&#34;" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;FmtStr_CustInfo &#60;- &#34;&#34;{0,-10}{1}&#34;&#34;&#34;,&#34;FmtStr_OrderInfo As String &#60;- &#34;&#34;{0,-23}{1,2} @ {2,10:C} = {3,12:C}&#34;&#34;&#34;,&#34;FmtStr_Total As String &#60;- &#34;&#34;{0,40}{1,13:C}&#34;&#34;&#34;,&#34;SubTotalCost As Double &#60;- (&#34;,&#34; OrderOut(0) * STOVECOST + &#34;,&#34; OrderOut(1) * REFRIGCOST +&#34;,&#34; OrderOut(2) * DISHCOST)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;With LstOut_Invoice.Items&#34;,&#34;     .Clear()&#34;,&#34;     .Add(&#34;&#34;Invoice Number: &#34;&#34; &amp; InvoiceNo)&#34;,&#34;     .Add(&#34;&#34;&#34;&#34;)&#34;,&#34;     .Add(String.Format(FmtStr_CustInfo, &#34;&#34;Name:&#34;&#34;, Customer(0)))&#34;,&#34;     .Add(String.Format(FmtStr_CustInfo, &#34;&#34;Address:&#34;&#34;, Customer(1)))&#34;,&#34;     .Add(String.Format(FmtStr_CustInfo, &#34;&#34;City:&#34;&#34;, Customer(2)))&#34;,&#34;End With&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<alternative text="&#34;If (OrderOut(0) &#62; 0) &#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;LstOut_Invoice.Items.Add(String.Format(FmtStr_OrderInfo, &#34;&#34;No of Stoves:&#34;&#34;,&#34;,&#34;                            OrderOut(0), STOVECOST, OrderOut(0) * STOVECOST))&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34; &#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;If (OrderOut(1) &#62; 0)&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;LstOut_Invoice.Items.Add(String.Format(FmtStr_OrderInfo, &#34;&#34;No of Refrigerators:&#34;&#34;,&#34;,&#34;                                      OrderOut(1), REFRIGCOST, OrderOut(1) * REFRIGCOST))&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34; &#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qFalse>
+		</alternative>
+		<alternative text="&#34;If (OrderOut(2) &#62; 0)&#34;" comment="&#34;&#34;" color="ffffff">
+			<qTrue>
+				<instruction text="&#34;LstOut_Invoice.Items.Add(String.Format(FmtStr_OrderInfo, &#34;&#34;No of Dishwashers:&#34;&#34;,&#34;,&#34;                                 OrderOut(2), DISHCOST, OrderOut(2) * DISHCOST))&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qTrue>
+			<qFalse>
+				<instruction text="&#34; &#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qFalse>
+		</alternative>
+		<instruction text="&#34;LstOut_Invoice.Items.Add(String.Format(FmtStr_Total, &#34;&#34; &#34;&#34;, &#34;&#34;------------&#34;&#34;))&#34;,&#34;LstOut_Invoice.Items.Add(String.Format(FmtStr_Total, &#34;&#34;Price:&#34;&#34;, SubTotalCost))&#34;,&#34;LstOut_Invoice.Items.Add(String.Format(FmtStr_Total, &#34;&#34;Sales Tax:&#34;&#34;, SubTotalCost * TAXRATE))&#34;,&#34;LstOut_Invoice.Items.Add(String.Format(FmtStr_Total, &#34;&#34;&#34;&#34;, &#34;&#34;------------&#34;&#34;))&#34;,&#34;LstOut_Invoice.Items.Add(String.Format(FmtStr_Total, &#34;&#34;Total Price:&#34;&#34;, SubTotalCost * (1 + TAXRATE)))&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>
